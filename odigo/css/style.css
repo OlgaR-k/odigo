@@ -37,9 +37,13 @@
 html {
     box-sizing: border-box;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
+
 /* базовые настройки для страницы */
 body {
     font-family: "Lato";
@@ -54,6 +58,7 @@ body {
     max-width: 1060px;
     margin: 0 auto;
 }
+
 /* Header style start */
 
 /* фиксация header при скролинге */
@@ -63,6 +68,7 @@ body {
     left: 0;
     width: 100%;
 }
+
 .header__wrapper {
     display: flex;
     /* перенос контента в целях безопасности*/
@@ -74,19 +80,23 @@ body {
     /* верхний отступ */
     padding-top: 56px;
 }
+
 /*выравнивание li применяется к ul по горизонтали */
 .header__list {
     display: flex;
     flex-wrap: wrap;
 }
+
 /* задаем отступы от элементов меню применяется к li */
 .header__item {
     margin-right: 82px;
 }
+
 /*у последнего элемента не нужен отступ справа. его нужно обнулить */
 .header__item:last-child {
     margin-right: 0;
 }
+
 /* стили для ссылок */
 .header__link {
     font-size: 18px;
@@ -94,20 +104,93 @@ body {
     color: #FFFFFF;
     text-decoration: none;
 }
+
 .header__link:hover,
 .header__link:active,
 .header__link:focus {
     opacity: .75;
 }
+
 /* Header style end */
 
 
 /* Header intro start */
 .intro {
     /*высота картинки на весь экран */
-    height: 100vh;
+    min-height: 100vh;
     background: url(../img/intro_bg.jpg) no-repeat center;
     /* чтобы картинка полностью покрывала блок при любых его размерах*/
     background-size: cover;
+    padding-top: 263px;
 }
+
+.intro__title {
+    max-width: 619px;
+    margin-bottom: 22px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.intro__subtitle {
+    max-width: 546px;
+    margin-bottom: 59px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.search-form__into {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-form__field {
+    /* ширина поля */
+    width: 297px;
+    /* прозрачный фон  */
+    /* background-color: transparent; */
+    background: transparent url(../img/circle-icon.svg) no-repeat left 10px;
+    /* размер кружков  */
+    background-size: 20px;
+    /* обнуление границы */
+    border: 0;
+    /* нижняя граница */
+    border-bottom: 2px solid #BFC0C5;
+    /* расстояние между элементами */
+    margin-right: 60px;
+    /* внутренний отступ инпута для подсказки */
+    padding-left: 43px;
+    /* внутренний отступ инпута для подсказки */
+    padding-bottom: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.search-form__field::placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.search-form__submit {
+    /* отступы для текста */
+    padding: 15px 39px;
+    /* верхний регистр букв */
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    background: #1B7DFF;
+    border: 0;
+}
+
+.search-form__submit:hover,
+.search-form__submit:active,
+.search-form__submit:focus {
+    background: #107afc;
+}
+
 /* Header intro end */

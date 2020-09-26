@@ -1,0 +1,37 @@
+
+.search-form__field {
+    /* ширина поля */
+    width: 297px;
+    /* прозрачный фон  */
+    /* background-color: transparent; */
+    background: transparent url(../img/circle-icon.svg) no-repeat left 10px;
+    /* размер кружков  */
+    background-size: 20px;
+    /* обнуление границы */
+    border: 0;
+    border-bottom: 2px solid #BFC0C5;
+    /* расстояние между элементами */
+    margin-right: 60px;
+    padding-left: 43px;
+    padding-bottom: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.search-form__field::placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+
+.search-form__submit:hover,
+.search-form__submit:focus,
+.search-form__submit:active {
+    background: #4090f3;
+}
+
+/* Header intro end */
